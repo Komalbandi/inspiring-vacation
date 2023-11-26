@@ -12,8 +12,11 @@ export default {
 
     theme: {
         colors: {
-            purple: "#280047",
-            white: '#fff'
+            purple: {
+                DEFAULT: "#280047",
+                light: "#7c658f",
+            },
+            white: "#fff",
         },
         extend: {
             fontFamily: {
