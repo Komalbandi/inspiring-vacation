@@ -19,4 +19,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/playList', [PlayListController::class, 'getAll']);
+Route::post('/playList', [PlayListController::class, 'getAll']);

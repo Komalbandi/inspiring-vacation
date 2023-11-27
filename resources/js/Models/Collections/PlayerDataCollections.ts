@@ -56,6 +56,22 @@ export class PlayerDataCollections {
         return songs.map((song) => song.Id());
     }
 
+    buildPlayList() {
+        let tmpPlayList = [];
+
+        this.get().forEach((data) => {
+            tmpPlayList.push({
+                song: data.song(),
+                artist: data.artist(),
+                musicTime: data.musicTime(),
+            });
+        });
+
+        return {
+            playList: tmpPlayList,
+        };
+    }
+
     resetPlayedList() {
         this.get().forEach((data) => {
             data.setUnplayed();
