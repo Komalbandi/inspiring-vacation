@@ -19,3 +19,7 @@ To run the project in terminal/powershell
 To login
 - first create account on the login page
 - use the account to login
+
+Note
+- I ran into issues with typescript and vue3, need more time to have a clean system
+- My components are written in atoms, molecules and organisms. I used Atomic design patterns
