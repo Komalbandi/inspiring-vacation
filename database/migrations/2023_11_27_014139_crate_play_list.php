@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('song');
             $table->string('image');
             $table->string('musicTime');
+            $table->timestamps();
         });
     }
 

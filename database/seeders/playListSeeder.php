@@ -6,11 +6,10 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
-use Illuminate\Support\Url;
 use Illuminate\Support\Integer;
 
 
-class playListSeeder extends Seeder
+class PlayListSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -22,8 +21,8 @@ class playListSeeder extends Seeder
         DB::table('play_list')->insert([
             'artist' => Str::random(10),
             'song' => Str::random(10),
-            'image' => Url::random(10),
-            'musicTime' => Integer::random(2).":".Integer::random(2),
+            'image' => Str::random(10),
+            'musicTime' => '0'.rand(2,9).":".rand(10,60),
         ]);
     }
     }
